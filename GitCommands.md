@@ -9,4 +9,5 @@ Git commands
 7.  git commit -m 'Initial commit'    -> This will make a commit in git
 8.  git log  -> This will show all the git commits
 9.  git remote add origin gituser@git.server.com:project.git   -> This will create a remote git repo
-10. 
+10. git pull <remote_repo>
+11. git push origin main
