@@ -1,5 +1,5 @@
 /*
-Pepcoding DSA Level 1 -> Pattern: Probelm- 1
+Pepcoding DSA Level 1 -> Pattern: Probelm- 3
 ----------------------------
 created by: ARINDAM MAJEE
 date & time: 1:15 PM Feb 5 2022
@@ -16,10 +16,11 @@ A number n
 --------------------------------------------------------
 OUTPUT FORMAT
 ----------------------------
-*
-*       *
-*       *       *
-*       *       *       *
+                        *
+                *       *
+        *       *       *
+        *       *       * 
+*       *       *       * 
 --------------------------------------------------------
 CONSTRAINTS
 ----------------------------
@@ -27,9 +28,13 @@ CONSTRAINTS
 --------------------------------------------------------
 SAMPLE
 ----------------------------
-Input: 2
-Output: *
-        *       *
+Input: 5
+Output: 
+				*	
+			*	*	
+		*	*	*	
+	*	*	*	*	
+*	*	*	*	*	
 --------------------------------------------------------
 COMPLEXITY
 ----------------------------
@@ -47,12 +52,16 @@ using namespace std;
 
 int main()
 {
-    int n; // Declare variable
+    int n;
     cout << "Enter the value of n: ";
     cin >> n;
-    for(int i = 0; i<n; i++)
+    for (int i=0; i<n; i++)
     {
-        for(int j =0; j<=i; j++)
+        for(int j=1; j<n-i; j++)
+        {
+            cout << " \t";
+        }
+        for (int j=0; j<=i; j++)
         {
             cout << "*\t";
         }
