@@ -1,5 +1,5 @@
 /*
-Problem Statemen
+Problem Statement
 --------------------------------------------------------------------------------------------------------------
 You are given an array (ARR) of length N, consisting of integers. You have to find the sum of the subarray 
 (including empty subarray) having maximum sum among all subarrays.
@@ -74,4 +74,5 @@ long long maxSubarraySum(int arr[], int n)
     return MaxSum;
 }
 
-// Driver code
+// Driver code. 
+// main() function will be here.
